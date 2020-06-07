@@ -22,10 +22,10 @@ const UpcomingActivities = () => {
         clickable: true,
       },
       loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      //   autoplay: {
+      //     delay: 2500,
+      //     disableOnInteraction: false,
+      //   },
       lazy: true,
       //   slidesPerView: 3,
       //   spaceBetween: 30,

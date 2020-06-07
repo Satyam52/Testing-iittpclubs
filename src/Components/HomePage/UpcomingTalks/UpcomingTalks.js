@@ -9,8 +9,8 @@ const UpcomingTalks = () => {
         el: ".swiper-pagination",
         clickable: true,
       },
-      slidesPerView: 5,
-      spaceBetween: 15,
+      slidesPerView: 4,
+      spaceBetween: 30,
       mousewheel: true,
       autoplay: {
         delay: 2500,

@@ -16,7 +16,7 @@
 #UpcomingTalks-swiper-container {
   align-items: center;
   width: 90%;
-  height: 500px;
+  height: 400px;
   /* border: 2px solid red; */
 }
 #UpcomingTalks-swiper-slide {
@@ -65,7 +65,7 @@
 #UpcomingTalksDate {
   font-size: 20px;
 }
-.swiper-slide-active {
+#UpcomingTalks-swiper-slide + .swiper-slide-active {
   background: #fff0ff !important;
   color: #000 !important;
 }

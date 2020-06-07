@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 const UpcomingActivities = () => {
   useEffect(() => {
-    var swiper = new Swiper(".swiper-container", {
+    var swiper = new Swiper("#UpcomingActivities-swiper-container", {
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
@@ -18,7 +18,7 @@ const UpcomingActivities = () => {
         slideShadows: true,
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: "#UpcomingActivities-swiper-pagination",
         clickable: true,
       },
       loop: true,
@@ -27,110 +27,143 @@ const UpcomingActivities = () => {
         disableOnInteraction: false,
       },
       lazy: true,
-      //   slidesPerView: 2,
+      //   slidesPerView: 3,
       //   spaceBetween: 30,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: "#UpcomingActivities-swiper-button-next",
+        prevEl: "#UpcomingActivities-swiper-button-prev",
       },
     });
   }, []);
+
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
   return (
     <>
-      <div className="center Swipeheader ">Upcoming Activities</div>
-      <div className="center" style={{ height: "80vh" }}>
-        <div className="swiper-container">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
+      <div id="UpcomingActivitiescenter">
+        <div className="UpcomingActivitiescenter" id="UpcomingActivitiesHeader">
+          Upcoming Activities
+        </div>
+        <div
+          className="swiper-container"
+          id="UpcomingActivities-swiper-container"
+        >
+          <div id="wrapper1" className="swiper-wrapper">
+            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
               <img
-                className="Swipeimage"
+                id="UpcomingActivities-swipe-image"
                 src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-3.jpg"
                 alt="news"
               />
-              <span className="Swipetitle">Let’s Download Telegra m</span>
-              <span className="Swipedescription">
+              <span id="UpcomingActivities-swipe-title">
+                Let’s Download Telegra m
+              </span>
+              <span id="UpcomingActivities-swipe-description">
                 Justice League’s Snyder cut realesing exclusively on HBO Max and
                 Telegram in 2021 .
               </span>
-              <div className=" center">
-                <Button className="Swipebtn" variant="outline">
+              <div id="UpcomingActivitiescenter">
+                <Button id="UpcomingActivities-swipe-btn" variant="outline">
                   Join Telegram
                 </Button>
               </div>
             </div>
-            <div className="swiper-slide">
+            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
               <img
-                className="Swipeimage"
+                id="UpcomingActivities-swipe-image"
                 src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-4.jpg"
                 alt="news"
               />
-              <span className="Swipetitle">Let’s Download Telegra m</span>
-              <span className="Swipedescription">
+              <span id="UpcomingActivities-swipe-title">
+                Let’s Download Telegra m
+              </span>
+              <span id="UpcomingActivities-swipe-description">
                 Justice League’s Snyder cut realesing exclusively on HBO Max and
                 Telegram in 2021 .
               </span>
-              <div className=" center">
-                <Button className="Swipebtn" variant="outline">
+              <div id="UpcomingActivitiescenter">
+                <Button id="UpcomingActivities-swipe-btn" variant="outline">
                   Join Telegram
                 </Button>
               </div>
             </div>
-            <div className="swiper-slide">
+            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
               <img
-                className="Swipeimage"
+                id="UpcomingActivities-swipe-image"
                 src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-2.jpg"
                 alt="news"
               />
-              <span className="Swipetitle">Let’s Download Telegra m</span>
-              <span className="Swipedescription">
+              <span id="UpcomingActivities-swipe-title">
+                Let’s Download Telegram
+              </span>
+              <span id="UpcomingActivities-swipe-description">
                 Justice League’s Snyder cut realesing exclusively on HBO Max and
                 Telegram in 2021 .
               </span>
-              <div className=" center">
-                <Button className="Swipebtn" variant="outline">
+              <div id="UpcomingActivitiescenter">
+                <Button id="UpcomingActivities-swipe-btn" variant="outline">
                   Join Telegram
                 </Button>
               </div>
             </div>
-            <div className="swiper-slide">
+            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
               <img
-                className="Swipeimage"
+                id="UpcomingActivities-swipe-image"
                 src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-4.jpg"
                 alt="news"
               />
-              <span className="Swipetitle">Let’s Download Telegra m</span>
-              <span className="Swipedescription">
+              <span id="UpcomingActivities-swipe-title">
+                Let’s Download Telegra m
+              </span>
+              <span id="UpcomingActivities-swipe-description">
                 Justice League’s Snyder cut realesing exclusively on HBO Max and
                 Telegram in 2021 .
               </span>
-              <div className=" center">
-                <Button className="Swipebtn" variant="outline">
+              <div id="UpcomingActivitiescenter">
+                <Button id="UpcomingActivities-swipe-btn" variant="outline">
                   Join Telegram
                 </Button>
               </div>
             </div>
-            <div className="swiper-slide">
+            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
               <img
-                className="Swipeimage"
+                id="UpcomingActivities-swipe-image"
                 src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-5.jpg"
                 alt="news"
               />
-              <span className="Swipetitle">Let’s Download Telegra m</span>
-              <span className="Swipedescription">
+              <span id="UpcomingActivities-swipe-title">
+                Let’s Download Telegra m
+              </span>
+              <span id="UpcomingActivities-swipe-description">
                 Justice League’s Snyder cut realesing exclusively on HBO Max and
                 Telegram in 2021 .
               </span>
-              <div className=" center">
-                <Button className="Swipebtn" variant="outline">
+              <div id="UpcomingActivitiescenter">
+                <Button id="UpcomingActivities-swipe-btn" variant="outline">
                   Join Telegram
                 </Button>
               </div>
             </div>
-            <div className="swiper-slide"></div>
           </div>
-          <div className="swiper-button-next"></div>
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-pagination"></div>
+          {width > 500 ? (
+            <>
+              <div
+                className="swiper-button-next"
+                id="UpcomingActivities-swiper-button-next"
+              ></div>
+              <div
+                className="swiper-button-prev"
+                id="UpcomingActivities-swiper-button-prev"
+              ></div>
+            </>
+          ) : null}
+          <div
+            className="swiper-pagination"
+            id="UpcomingActivities-swiper-pagination"
+          ></div>
         </div>
       </div>
     </>

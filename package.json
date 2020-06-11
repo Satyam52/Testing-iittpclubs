@@ -1,7 +1,7 @@
 {
   "name": "testing-iittpclubs",
   "version": "0.1.0",
-  "homepage": "https://Satyam52.github.com/Testing-iittpclubs",
+  "homepage": "https://Satyam52.github.com/Testing-iittpclubs/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

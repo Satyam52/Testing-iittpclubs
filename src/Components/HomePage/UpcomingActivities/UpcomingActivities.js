@@ -1,7 +1,55 @@
 import React, { useEffect } from "react";
 import "./UpcomingActivities.css";
 import Swiper from "swiper";
-import { Button } from "react-bootstrap";
+import Modal from "./Modal/Modal";
+
+const data = [
+  {
+    buttonTitle: "Join Telegram",
+    title: "Let’s Download Telegram",
+    description:
+      " Justice League’s Snyder cut realesing exclusively on HBO Max and Telegram in 2021.",
+    postRequestUrl: "localhost",
+    imageUrl:
+      "https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-3.jpg",
+  },
+  {
+    buttonTitle: "Join Telegram",
+    title: "Let’s Download Telegram",
+    description:
+      " Justice League’s Snyder cut realesing exclusively on HBO Max and Telegram in 2021.",
+    postRequestUrl: "#!",
+    imageUrl:
+      "https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-3.jpg",
+  },
+  {
+    buttonTitle: "Join Telegram",
+    title: "Let’s Download Telegram",
+    description:
+      " Justice League’s Snyder cut realesing exclusively on HBO Max and Telegram in 2021.",
+    postRequestUrl: "#!",
+    imageUrl:
+      "https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-3.jpg",
+  },
+  {
+    buttonTitle: "Join Telegram",
+    title: "Let’s Download Telegram",
+    description:
+      " Justice League’s Snyder cut realesing exclusively on HBO Max and Telegram in 2021.",
+    postRequestUrl: "#!",
+    imageUrl:
+      "https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-3.jpg",
+  },
+  {
+    buttonTitle: "Join Telegram",
+    title: "Let’s Download Telegram",
+    description:
+      " Justice League’s Snyder cut realesing exclusively on HBO Max and Telegram in 2021.",
+    postRequestUrl: "#!",
+    imageUrl:
+      "https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-3.jpg",
+  },
+];
 
 const UpcomingActivities = () => {
   useEffect(() => {
@@ -27,8 +75,6 @@ const UpcomingActivities = () => {
         disableOnInteraction: false,
       },
       lazy: true,
-      //   slidesPerView: 3,
-      //   spaceBetween: 30,
       navigation: {
         nextEl: "#UpcomingActivities-swiper-button-next",
         prevEl: "#UpcomingActivities-swiper-button-prev",
@@ -44,7 +90,7 @@ const UpcomingActivities = () => {
   return (
     <>
       <div id="UpcomingActivitiescenter">
-        <div className="UpcomingActivitiescenter" id="UpcomingActivitiesHeader">
+        <div className="UpcomingActivitiescenter heading-carousel">
           Upcoming Activities
         </div>
         <div
@@ -52,101 +98,36 @@ const UpcomingActivities = () => {
           id="UpcomingActivities-swiper-container"
         >
           <div id="wrapper1" className="swiper-wrapper">
-            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
-              <img
-                id="UpcomingActivities-swipe-image"
-                src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-3.jpg"
-                alt="news"
-              />
-              <span id="UpcomingActivities-swipe-title">
-                Let’s Download Telegra m
-              </span>
-              <span id="UpcomingActivities-swipe-description">
-                Justice League’s Snyder cut realesing exclusively on HBO Max and
-                Telegram in 2021 .
-              </span>
-              <div id="UpcomingActivitiescenter">
-                <Button id="UpcomingActivities-swipe-btn" variant="outline">
-                  Join Telegram
-                </Button>
+            {data.map((item, index) => (
+              <div
+                className="swiper-slide"
+                id="UpcomingActivities-swiper-slide"
+                key={index}
+              >
+                <img
+                  id="UpcomingActivities-swipe-image"
+                  src={item.imageUrl}
+                  alt="news"
+                />
+                <span id="UpcomingActivities-swipe-title">
+                  {item.title + index}
+                </span>
+                <span id="UpcomingActivities-swipe-description">
+                  {item.description}
+                </span>
+                <div id="UpcomingActivitiescenter">
+                  {/* <Button id="UpcomingActivities-swipe-btn" variant="outline">
+                    Join Telegram
+                  </Button> */}
+                  <Modal
+                    postRequestUrl={item.postRequestUrl}
+                    title={item.title}
+                    description={item.description}
+                    buttonTitle={item.buttonTitle}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
-              <img
-                id="UpcomingActivities-swipe-image"
-                src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-4.jpg"
-                alt="news"
-              />
-              <span id="UpcomingActivities-swipe-title">
-                Let’s Download Telegra m
-              </span>
-              <span id="UpcomingActivities-swipe-description">
-                Justice League’s Snyder cut realesing exclusively on HBO Max and
-                Telegram in 2021 .
-              </span>
-              <div id="UpcomingActivitiescenter">
-                <Button id="UpcomingActivities-swipe-btn" variant="outline">
-                  Join Telegram
-                </Button>
-              </div>
-            </div>
-            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
-              <img
-                id="UpcomingActivities-swipe-image"
-                src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-2.jpg"
-                alt="news"
-              />
-              <span id="UpcomingActivities-swipe-title">
-                Let’s Download Telegram
-              </span>
-              <span id="UpcomingActivities-swipe-description">
-                Justice League’s Snyder cut realesing exclusively on HBO Max and
-                Telegram in 2021 .
-              </span>
-              <div id="UpcomingActivitiescenter">
-                <Button id="UpcomingActivities-swipe-btn" variant="outline">
-                  Join Telegram
-                </Button>
-              </div>
-            </div>
-            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
-              <img
-                id="UpcomingActivities-swipe-image"
-                src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-4.jpg"
-                alt="news"
-              />
-              <span id="UpcomingActivities-swipe-title">
-                Let’s Download Telegra m
-              </span>
-              <span id="UpcomingActivities-swipe-description">
-                Justice League’s Snyder cut realesing exclusively on HBO Max and
-                Telegram in 2021 .
-              </span>
-              <div id="UpcomingActivitiescenter">
-                <Button id="UpcomingActivities-swipe-btn" variant="outline">
-                  Join Telegram
-                </Button>
-              </div>
-            </div>
-            <div className="swiper-slide" id="UpcomingActivities-swiper-slide">
-              <img
-                id="UpcomingActivities-swipe-image"
-                src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-5.jpg"
-                alt="news"
-              />
-              <span id="UpcomingActivities-swipe-title">
-                Let’s Download Telegra m
-              </span>
-              <span id="UpcomingActivities-swipe-description">
-                Justice League’s Snyder cut realesing exclusively on HBO Max and
-                Telegram in 2021 .
-              </span>
-              <div id="UpcomingActivitiescenter">
-                <Button id="UpcomingActivities-swipe-btn" variant="outline">
-                  Join Telegram
-                </Button>
-              </div>
-            </div>
+            ))}
           </div>
           {width > 500 ? (
             <>

@@ -1,24 +1,14 @@
-import React, { Fragment } from "react";
-import "swiper/css/swiper.css";
-import UpcomingTalks from "./Components/HomePage/UpcomingTalks/UpcomingTalks";
-import UpcomingActivities from "./Components/HomePage/UpcomingActivities/UpcomingActivities";
+import React from "react";
 import "./App.css";
+import "swiper/css/swiper.css";
+import { Navigation } from "./Components/Navigation/Navigation";
+import HomePage from "./Components/HomePage/HomePage";
 
 function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-      }}
-    >
-      <div>
-        <UpcomingActivities />
-      </div>
-      <div>
-        <UpcomingTalks />
-      </div>
+    <div className="App">
+      <Navigation />
+      <HomePage />
     </div>
   );
 }

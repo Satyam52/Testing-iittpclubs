@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  height: 100%;
+  background-color: #20201f;
 }
 body {
   background: #171514;

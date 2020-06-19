@@ -1,9 +1,10 @@
 .border-div-button-featured {
-  background: linear-gradient(to right, #00bcf2, #01b295);
-
-  padding: 0.5%;
-  width: 50%;
+  /* background: linear-gradient(to right, #00bcf2, #b4a0ff); */
+  background: #00bcf2;
+  padding: 2px;
+  width: 30%;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 .Button-featured {
@@ -20,12 +21,14 @@
 
 .Button-text-featured {
   font-weight: 200;
-  font-size: 2vw;
-  background: linear-gradient(to right, #00bcf2, #01b295);
+  font-size: 1.5vw;
+  /* background: linear-gradient(to right, #00bcf2, #b4a0ff); */
+  background: #00bcf2;
   letter-spacing: 0.015em;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .Button-featured:hover {
@@ -34,6 +37,7 @@
   -webkit-box-shadow: inset 0px 0px 9px -2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0px 0px 9px -2px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0px 0px 9px -2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
 }
 
 .Button-featured:hover span {
@@ -41,15 +45,25 @@
 
   -webkit-text-fill-color: #201f1e;
 }
-
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .Button-text-featured {
-    font-size: 5vw;
+    font-size: 2.3vw;
+  }
+  .border-div-button-featured {
+    padding: 0.3%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .Button-text-featured {
+    font-size: 25px;
   }
   .border-div-button-featured {
     padding: 1px;
     width: 200px;
     border-radius: 2px;
+    width: 80%;
   }
   .Button-featured {
     padding: 2%;
@@ -57,5 +71,16 @@
   }
   .Button-text-featured {
     font-weight: 400;
+  }
+}
+
+@media (max-width: 550px) {
+  .Button-text-featured {
+    font-size: 5.3vw;
+  }
+  .border-div-button-featured {
+    width: 80%;
+    margin: 4px;
+    padding: 1.4px;
   }
 }

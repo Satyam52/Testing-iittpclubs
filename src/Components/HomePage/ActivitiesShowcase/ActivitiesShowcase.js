@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Card } from 'react-bootstrap';
 import './ActivitiesShowcase.css';
-import CustomButton from './CustomButton/CustomButton';
+import CustomButton from '../LimeLightZone/CustomButton/CustomButton';
 
 class ActivitiesShowcase extends Component {
   render() {
@@ -15,7 +15,7 @@ class ActivitiesShowcase extends Component {
       interval: 3000,
     };
     return (
-      <div style={{ marginTop: '5%' }}>
+      <div style={{ marginTop: '5%' }} className="Activities-Showcase">
         <p className="heading-carousel">Activities Showcase</p>
         <div>
           <Carousel {...settings} className="desktop-carousel">

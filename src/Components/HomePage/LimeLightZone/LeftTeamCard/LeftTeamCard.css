@@ -1,0 +1,149 @@
+.root-LeftTeamCard {
+  width: 100%;
+  height: auto;
+  padding: 6% 10%;
+  padding-left: 5.8%;
+  display: flex;
+  justify-content: flex-start;
+
+  color: white;
+}
+.root-LeftTeamCard .read-more-button {
+  background: linear-gradient(to right, #00bcf2, #b4a0ff);
+  letter-spacing: -0.015em;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.imageDiv-LeftTeamCard {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  background: rgb(0, 188, 242);
+  background: -moz-linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 58%,
+    rgba(178, 160, 255, 1) 94%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 58%,
+    rgba(178, 160, 255, 1) 94%
+  );
+  background: linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 58%,
+    rgba(178, 160, 255, 1) 94%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bcf2",endColorstr="#b2a0ff",GradientType=1);
+  width: 39%;
+  display: inline-block;
+}
+.imageDiv-LeftTeamCard img {
+  height: 100%;
+}
+
+.content_div-LeftTeamCard {
+  padding: 0% 6% 1% 0%;
+  width: 61%;
+  display: inline-block;
+  direction: rtl;
+}
+
+.heading-LeftTeamCard {
+  cursor: default;
+  padding: 0%;
+  padding-top: 1%;
+  font-family: 'Roboto Slab', sans-serif;
+  line-height: 100%;
+  margin: 0;
+  width: 100%;
+  font-size: 3.7vw;
+  font-weight: 300;
+  background: linear-gradient(to right, #00bcf2, #b4a0ff);
+  letter-spacing: -0.015em;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  direction: ltr;
+  text-align: end;
+}
+
+.secondary-heading-LeftTeamCard {
+  cursor: default;
+  padding: 0%;
+  direction: ltr;
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  height: fit-content;
+
+  text-align: end;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+.description-LeftTeamCard-parent {
+  cursor: default;
+  margin: 0;
+  padding: 0%;
+  margin-top: 7%;
+  overflow: scroll;
+  max-height: 200px;
+  padding-left: 30px;
+}
+.description-LeftTeamCard {
+  margin: 0;
+  padding: 0%;
+  direction: ltr;
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.45vw;
+  line-height: 27px;
+  word-spacing: -0.05em;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #fff5f5;
+}
+
+.button-LeftTeamCard {
+  direction: ltr;
+  margin-top: 4%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 1500px) {
+  .description-LeftTeamCard {
+    line-height: 36px;
+  }
+}
+@media screen and (min-width: 1460px) {
+  .description-LeftTeamCard-parent {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .root-LeftTeamCard {
+    height: auto;
+  }
+  .description-LeftTeamCard {
+    line-height: 23px;
+    font-size: 17px;
+  }
+  .heading-LeftTeamCard {
+    font-size: 4.1vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .root-LeftTeamCard {
+    display: none;
+  }
+}

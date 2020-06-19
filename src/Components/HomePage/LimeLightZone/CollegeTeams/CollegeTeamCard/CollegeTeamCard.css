@@ -1,0 +1,327 @@
+.root-CollegeTeamCard {
+  width: 100%;
+  height: auto;
+  padding: 2% 5%;
+
+  display: flex;
+  justify-content: flex-start;
+
+  color: white;
+  margin-bottom: 5%;
+}
+
+.profile-div-CollegeTeamCard {
+  width: 45%;
+  display: inline-block;
+  height: 100%;
+}
+
+.imageDiv-CollegeTeamCard,
+.imageDiv-CollegeTeamCard-Mobile {
+  height: 340px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  margin-top: 8%;
+  background: rgb(0, 188, 242);
+  background: -moz-linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 58%,
+    rgba(178, 160, 255, 1) 94%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 58%,
+    rgba(178, 160, 255, 1) 94%
+  );
+  background: linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 58%,
+    rgba(178, 160, 255, 1) 94%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bcf2",endColorstr="#b2a0ff",GradientType=1);
+}
+.imageDiv-CollegeTeamCard img {
+  height: 100%;
+}
+
+.content_div-CollegeTeamCard {
+  padding: 0% 4% 1% 0%;
+  width: 55%;
+  display: inline-block;
+}
+.heading-CollegeTeamCard,
+.heading-CollegeTeamCard-Mobile {
+  padding: 0%;
+  padding-top: 1%;
+  font-family: 'Roboto Slab', sans-serif;
+  line-height: 100%;
+  margin: 0;
+  width: 100%;
+  font-size: 3.7vw;
+  font-weight: 300;
+  background: linear-gradient(to right, #00bcf2, #b4a0ff);
+  letter-spacing: -0.015em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-align: start;
+}
+
+.description-CollegeTeamCard,
+.description-CollegeTeamCard-Mobile {
+  margin: 0;
+  padding: 0%;
+  margin-top: 10%;
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.45vw;
+  line-height: 27px;
+  word-spacing: -0.05em;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: -0.015em;
+  overflow: scroll;
+
+  padding-right: 10px;
+  color: #fff5f5;
+}
+
+.button-CollegeTeamCard {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.achievement-CollegeTeamCard,
+.achievement-CollegeTeamCard-Mobile {
+  margin-top: 4%;
+
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: -0.015em;
+  background: linear-gradient(
+    88.1deg,
+    #00b294 -53.04%,
+    rgba(255, 199, 0, 0.88) 51.02%,
+    #00b294 160.15%
+  );
+  opacity: 0.9;
+  border-radius: 2px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #000000;
+}
+.team-head-profile-div-CollegeTeamCard {
+  display: flex;
+  justify-content: flex-end;
+
+  flex-direction: row;
+}
+.team-head-image-root-CollegeTeamCard {
+  width: 78px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 2px;
+  background: rgb(0, 188, 242);
+  background: -moz-linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 0%,
+    rgba(180, 160, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 0%,
+    rgba(180, 160, 255, 1) 100%
+  );
+  background: linear-gradient(
+    145deg,
+    rgba(0, 188, 242, 1) 0%,
+    rgba(180, 160, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bcf2",endColorstr="#b4a0ff",GradientType=1);
+}
+
+.team-head-image-CollegeTeamCard {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.team-head-div-CollegeTeamCard {
+  height: 78px;
+  margin-left: 2%;
+}
+
+.team-head-name-CollegeTeamCard {
+  font-size: 30px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 0;
+
+  background: linear-gradient(to right, #00bcf2, #b4a0ff);
+  letter-spacing: -0.015em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-head-description-CollegeTeamCard {
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+
+.achievement-CollegeTeamCard:hover,
+.achievement-CollegeTeamCard-Mobile:hover {
+  opacity: 1;
+}
+@media screen and (min-width: 1600px) {
+  .description-CollegeTeamCard {
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .description-CollegeTeamCard {
+    font-size: 1.7vw;
+  }
+  .heading-CollegeTeamCard-Mobile {
+    font-size: 4.1vw;
+  }
+  .root-CollegeTeamCard .Button-Custom {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 900.2px) {
+  .root-CollegeTeamCard-Mobile {
+    display: none;
+  }
+  .description-CollegeTeamCard {
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .root-CollegeTeamCard {
+    display: none;
+  }
+  .root-CollegeTeamCard-Mobile {
+    margin-bottom: 5%;
+  }
+
+  .heading-CollegeTeamCard-Mobile {
+    margin: auto;
+    margin-top: 4%;
+
+    font-size: 7vw;
+
+    text-align: center;
+  }
+  .Team-Head-CollegeTeamCard-Mobile {
+    color: white;
+    display: flex;
+    font-family: 'Roboto Slab', sans-serif;
+    justify-content: center;
+    margin-top: 2%;
+    width: 100%;
+    font-size: 3vw;
+  }
+  .imageDiv-CollegeTeamCard-Mobile {
+    margin: 5% 10%;
+  }
+  .imageDiv-CollegeTeamCard-Mobile img {
+    height: 100%;
+  }
+  .description-CollegeTeamCard-Mobile {
+    margin: 1% 8%;
+    padding: 0%;
+    font-size: 17px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    line-height: 27px;
+    word-spacing: -0.05em;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: -0.015em;
+    overflow: scroll;
+
+    color: #fff5f5;
+  }
+  .button-CollegeTeamCard-Mobile {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+  }
+  .team-head-profile-div-CollegeTeamCard {
+    justify-content: center;
+    margin-top: 2%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading-CollegeTeamCard-Mobile {
+    font-size: 60px;
+  }
+
+  .Team-Head-CollegeTeamCard-Mobile {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 390px) {
+  .heading-CollegeTeamCard-Mobile {
+    font-size: 50px;
+  }
+
+  .Team-Head-CollegeTeamCard-Mobile {
+    font-size: 24px;
+  }
+
+  .achievement-CollegeTeamCard-Mobile {
+    height: 70px;
+  }
+  .team-head-profile-div-CollegeTeamCard {
+    margin: 5% auto;
+  }
+
+  .team-head-image-root-CollegeTeamCard {
+    width: 60px;
+    height: 60px;
+  }
+
+  .team-head-div-CollegeTeamCard {
+    height: 60px;
+    margin-left: 2%;
+  }
+
+  .team-head-name-CollegeTeamCard {
+    font-size: 24px;
+  }
+
+  .team-head-description-CollegeTeamCard {
+    font-size: 14px;
+  }
+}

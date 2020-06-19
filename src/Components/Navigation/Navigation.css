@@ -1,24 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
 
-.nav-container {
-  background-color: rgb(32, 31, 30);
+/* ==== NAVIGATION CONTAINER ==== */
+#root > div > div.nav-container {
+  background-color: #201f1e;
+  opacity: 0.97;
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
   position: sticky;
-  top: 0;
-  z-index: 10;
+  top: -7px;
+  z-index: 100;
+  margin-bottom: 3%;
+  padding: 0 2em;
 }
-
+.nav-container::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to right, #1a83a1, #675899);
+  height: 0.8px;
+  left: 0;
+  bottom: 0;
+}
+/* 
 @media (min-width: 700px) {
   .nav-container {
     padding: 0% 4%;
   }
-}
+} */
 
 /* ==== Tech Hub IIT Tirupati BRAND NAME ==== */
 
 .main-web-name {
-  font-size: 180%;
-  background-image: linear-gradient(
+  font-size: 190%;
+  background: linear-gradient(
     90deg,
     rgb(0, 185, 214),
     rgb(3, 167, 177),
@@ -38,15 +51,47 @@
   box-sizing: border-box;
 }
 
-.navigation-link {
+a.nav-link-Navigation.nav-link,
+.nav-dropdown-Navigation {
   display: inline-block;
   position: relative;
+  font-size: 120%;
+  margin: 0 0.8em;
+  white-space: nowrap;
 }
 
-.navigation-link:link::before {
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f0f0f0;
+}
+
+a#collasible-nav-dropdown.dropdown-toggle.nav-link::after {
+  content: none;
+}
+
+/* underline for the active page  */
+
+a.nav-link-Navigation.nav-link.active::after {
   content: '';
   position: absolute;
-  width: 100%;
+  bottom: 0;
+  left: 5%;
+  height: 2px;
+  width: 90%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 188, 242, 1),
+    rgba(123, 163, 244, 1),
+    rgba(180, 160, 255, 1)
+  );
+  border-radius: 15%;
+}
+
+/* underline transition for link clicked */
+#collasible-nav-dropdown:link::before,
+.nav-link-Navigation:link::before {
+  content: '';
+  position: absolute;
+  width: 90%;
   transform: scaleX(0);
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -54,25 +99,132 @@
   -o-transform: scaleX(0);
   height: 2px;
   bottom: 0;
-  left: 0;
-  background: linear-gradient(90deg, rgba(0, 188, 242, 1), rgba(123, 163, 244, 1), rgba(180, 160, 255, 1)  );
+  left: 5%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 188, 242, 1),
+    rgba(123, 163, 244, 1),
+    rgba(180, 160, 255, 1)
+  );
   transform-origin: bottom right;
-  transition: transform ease-in-out 0.5s;
-  -webkit-transition: transform ease-in-out 0.5s;
-  -moz-transition: transform ease-in-out 0.5s;
-  -ms-transition: transform ease-in-out 0.5s;
-  -o-transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 150ms;
+  -webkit-transition: transform ease-in-out 150ms;
+  -moz-transition: transform ease-in-out 150ms;
+  -ms-transition: transform ease-in-out 150ms;
+  -o-transition: transform ease-in-out 150ms;
+  border-radius: 15%;
 }
 
-.navigation-link:active::before,
-.navigation-link:hover::before {
+#collasible-nav-dropdown:focus::before,
+.nav-link-Navigation:active::before {
+  width: 90%;
   transform: scaleX(1);
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
   transform-origin: bottom left;
+  border-radius: 15%;
 }
+/* drop-down menu items styling */
+
+#responsive-navbar-nav
+  > div
+  > div.nav-dropdown-Navigation.show.dropdown.nav-item
+  > div {
+  margin: 0;
+  padding: 0;
+  background-color: #30302f;
+  opacity: 0.99;
+}
+
+.nav-dropdown-Navigation .about-menuitem-Navigation,
+.nav-dropdown-Navigation .events-menuitem-Navigation,
+.nav-dropdown-Navigation .projects-menuitem-Navigation,
+.nav-dropdown-Navigation .techteams-menuitem-Navigation,
+.nav-dropdown-Navigation .clubs-menuitem-Navigation {
+  color: #f0f0f0;
+  background: linear-gradient(to right, #6a5f8e, #106d88);
+  border-left: rgba(12, 12, 12, 0.7) 3px solid;
+  border-top: rgba(12, 12, 12, 0.7) 1px solid;
+  border-right: rgba(12, 12, 12, 0.7) 3px solid;
+  border-bottom: rgba(12, 12, 12, 0.7) 3px solid;
+  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  white-space: nowrap;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-dropdown-Navigation .about-menuitem-Navigation:hover,
+.nav-dropdown-Navigation .events-menuitem-Navigation:hover,
+.nav-dropdown-Navigation .projects-menuitem-Navigation:hover,
+.nav-dropdown-Navigation .techteams-menuitem-Navigation:hover,
+.nav-dropdown-Navigation .clubs-menuitem-Navigation:hover {
+  color: #ffffff;
+  background: linear-gradient(to right, #8779bb, #0a8baf);
+  font-weight: 400;
+}
+
+/* ==== GET INSPIRED ==== */
+
+#collasible-nav-dropdown > span > img {
+  height: 1em;
+  margin: 0 0 0.3em 0.5em;
+}
+
+#collasible-nav-dropdown > span {
+  background: linear-gradient(0deg, #bf8d1a, #c99912);
+  font-weight: 500;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#collasible-nav-dropdown > span:hover,
+.navbar-dark .navbar-nav .nav-link:last-child img:hover {
+  background: linear-gradient(0deg, #eaaa16, #fdbf0a);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+/* get inspired menu items gradients */
+
+.nav-dropdown-Navigation .getinspired-menuitem-Navigation {
+  color: #ffffff;
+  background: linear-gradient(to right, #8f880f, #875335);
+  border-top: rgba(12, 12, 12, 0.7) 1px solid;
+  border-left: rgba(12, 12, 12, 0.7) 3px solid;
+  border-right: rgba(12, 12, 12, 0.7) 3px solid;
+  border-bottom: rgba(12, 12, 12, 0.7) 3px solid;
+  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  white-space: nowrap;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-dropdown-Navigation .getinspired-menuitem-Navigation:hover {
+  color: #f0f0f0;
+  background: linear-gradient(to right, #bcb209, #be6531);
+  font-weight: 400;
+}
+
+/* ==== Hamburger Menu ==== */
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url(navbarBurgerMenuIcon.png);
@@ -87,20 +239,51 @@
 
 /* ==== MEDIA QUERIES ==== */
 
-@media only screen and (max-width: 960px) {
-  .main-web-name {
-    font-size: 170%;
+@media only screen and (max-width: 1200px) {
+  a.nav-link-Navigation.nav-link,
+  .nav-dropdown-Navigation {
+    font-size: 110%;
+    margin: 0 0.4em;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
   .main-web-name {
-    font-size: 160%;
+    font-size: 180%;
+  }
+  a.nav-link-Navigation.nav-link,
+  .nav-dropdown-Navigation {
+    font-size: 100%;
+    margin: 0 0.2em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-web-name {
+    font-size: 170%;
+    margin: 0 0.1em;
+  }
+  #responsive-navbar-nav
+    > div
+    > div.nav-dropdown-Navigation.show.dropdown.nav-item
+    > div {
+    transform: scale(0.9);
+    font-size: 1.1rem;
+  }
+  #root > div > div.nav-container {
+    padding: 0 1em;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .main-web-name {
-    font-size: 140%;
+    font-size: 160%;
+    margin: 0 0.1em;
+  }
+  #root > div > div.nav-container {
+    padding: 0 0;
+  }
+  #root > div > div.nav-container > nav > button {
+    padding: 0;
   }
 }

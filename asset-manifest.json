@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Testing-iittpclubs/static/css/main.a9d7ed8a.chunk.css",
+    "main.js": "/Testing-iittpclubs/static/js/main.2b92f091.chunk.js",
+    "main.js.map": "/Testing-iittpclubs/static/js/main.2b92f091.chunk.js.map",
+    "runtime-main.js": "/Testing-iittpclubs/static/js/runtime-main.0e78f3fe.js",
+    "runtime-main.js.map": "/Testing-iittpclubs/static/js/runtime-main.0e78f3fe.js.map",
+    "static/css/2.4c6fa45d.chunk.css": "/Testing-iittpclubs/static/css/2.4c6fa45d.chunk.css",
+    "static/js/2.da23a29a.chunk.js": "/Testing-iittpclubs/static/js/2.da23a29a.chunk.js",
+    "static/js/2.da23a29a.chunk.js.map": "/Testing-iittpclubs/static/js/2.da23a29a.chunk.js.map",
+    "index.html": "/Testing-iittpclubs/index.html",
+    "precache-manifest.8e4f63bcc01a63b166a09b4b27ebd613.js": "/Testing-iittpclubs/precache-manifest.8e4f63bcc01a63b166a09b4b27ebd613.js",
+    "service-worker.js": "/Testing-iittpclubs/service-worker.js",
+    "static/css/2.4c6fa45d.chunk.css.map": "/Testing-iittpclubs/static/css/2.4c6fa45d.chunk.css.map",
+    "static/css/main.a9d7ed8a.chunk.css.map": "/Testing-iittpclubs/static/css/main.a9d7ed8a.chunk.css.map",
+    "static/js/2.da23a29a.chunk.js.LICENSE.txt": "/Testing-iittpclubs/static/js/2.da23a29a.chunk.js.LICENSE.txt",
+    "static/media/GetInspiredBulbIcon.png": "/Testing-iittpclubs/static/media/GetInspiredBulbIcon.9d76ef0b.png",
+    "static/media/Navigation.css": "/Testing-iittpclubs/static/media/navbarBurgerMenuIcon.fed70ed7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e78f3fe.js",
+    "static/css/2.4c6fa45d.chunk.css",
+    "static/js/2.da23a29a.chunk.js",
+    "static/css/main.a9d7ed8a.chunk.css",
+    "static/js/main.2b92f091.chunk.js"
+  ]
+}
